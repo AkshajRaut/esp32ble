@@ -1,0 +1,15 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/akshajraut/esp/gatt_server/build/bootloader/esp-idf/esptool_py && /Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/akshajraut/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/akshajraut/esp/gatt_server/build/bootloader/bootloader.bin
+Bootloader binary size 0x66c0 bytes. 0x940 bytes (8%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gatts_demo.c.obj
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable gatt_server_demos.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.3
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /Users/akshajraut/esp/gatt_server/build/gatt_server_demos.bin
+[7/7] cd /Users/akshajraut/esp/gatt_server/build/esp-idf/esptool_py && /Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/akshajraut/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/akshajraut/esp/gatt_server/build/partition_table/partition-table.bin /Users/akshajraut/esp/gatt_server/build/gatt_server_demos.bin
+gatt_server_demos.bin binary size 0x946a0 bytes. Smallest app partition is 0x100000 bytes. 0x6b960 bytes (42%) free.

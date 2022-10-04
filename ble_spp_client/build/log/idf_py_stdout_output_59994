@@ -1,0 +1,77 @@
+[0/1] Re-running CMake...
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /Users/akshajraut/esp/ble_spp_client/sdkconfig
+Loading defaults file /Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults...
+Loading defaults file /Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32...
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:398 CONFIG_ESP32_PHY_CALIBRATION_AND_DATA_STORAGE was replaced with CONFIG_ESP_PHY_CALIBRATION_AND_DATA_STORAGE
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:399 CONFIG_ESP32_PHY_INIT_DATA_IN_PARTITION was replaced with CONFIG_ESP_PHY_INIT_DATA_IN_PARTITION
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:400 CONFIG_ESP32_PHY_MAX_WIFI_TX_POWER was replaced with CONFIG_ESP_PHY_MAX_WIFI_TX_POWER
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:401 CONFIG_ESP32_PHY_MAX_TX_POWER was replaced with CONFIG_ESP_PHY_MAX_TX_POWER
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:932 CONFIG_ESP_TASK_WDT was replaced with CONFIG_ESP_TASK_WDT_INIT
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1079 CONFIG_OTA_ALLOW_HTTP was replaced with CONFIG_ESP_HTTPS_OTA_ALLOW_HTTP
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1102 CONFIG_ESP32_DEBUG_OCDAWARE was replaced with CONFIG_ESP_DEBUG_OCDAWARE
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1103 CONFIG_ESP32_BROWNOUT_DET was replaced with CONFIG_ESP_BROWNOUT_DET
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1104 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_0 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_0
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1105 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_1 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_1
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1106 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_2 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_2
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1107 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_3 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_3
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1108 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_4 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_4
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1109 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_5 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_5
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1110 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_6 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_6
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1111 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_7 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_7
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1112 CONFIG_ESP32_BROWNOUT_DET_LVL was replaced with CONFIG_ESP_BROWNOUT_DET_LVL
+/Users/akshajraut/esp/ble_spp_client/sdkconfig.defaults.esp32:1113 CONFIG_ESP32_REDUCE_PHY_TX_POWER was replaced with CONFIG_ESP_PHY_REDUCE_TX_POWER
+-- App "spp_client_demo" version: 1
+-- Adding linker script /Users/akshajraut/esp/ble_spp_client/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_serial_slave_link esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport tinyusb ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /Users/akshajraut/esp/esp-idf/components/app_trace /Users/akshajraut/esp/esp-idf/components/app_update /Users/akshajraut/esp/esp-idf/components/bootloader /Users/akshajraut/esp/esp-idf/components/bootloader_support /Users/akshajraut/esp/esp-idf/components/bt /Users/akshajraut/esp/esp-idf/components/cmock /Users/akshajraut/esp/esp-idf/components/console /Users/akshajraut/esp/esp-idf/components/cxx /Users/akshajraut/esp/esp-idf/components/driver /Users/akshajraut/esp/esp-idf/components/efuse /Users/akshajraut/esp/esp-idf/components/esp-tls /Users/akshajraut/esp/esp-idf/components/esp_adc /Users/akshajraut/esp/esp-idf/components/esp_app_format /Users/akshajraut/esp/esp-idf/components/esp_common /Users/akshajraut/esp/esp-idf/components/esp_eth /Users/akshajraut/esp/esp-idf/components/esp_event /Users/akshajraut/esp/esp-idf/components/esp_gdbstub /Users/akshajraut/esp/esp-idf/components/esp_hid /Users/akshajraut/esp/esp-idf/components/esp_http_client /Users/akshajraut/esp/esp-idf/components/esp_http_server /Users/akshajraut/esp/esp-idf/components/esp_https_ota /Users/akshajraut/esp/esp-idf/components/esp_https_server /Users/akshajraut/esp/esp-idf/components/esp_hw_support /Users/akshajraut/esp/esp-idf/components/esp_lcd /Users/akshajraut/esp/esp-idf/components/esp_local_ctrl /Users/akshajraut/esp/esp-idf/components/esp_netif /Users/akshajraut/esp/esp-idf/components/esp_phy /Users/akshajraut/esp/esp-idf/components/esp_pm /Users/akshajraut/esp/esp-idf/components/esp_psram /Users/akshajraut/esp/esp-idf/components/esp_ringbuf /Users/akshajraut/esp/esp-idf/components/esp_rom /Users/akshajraut/esp/esp-idf/components/esp_serial_slave_link /Users/akshajraut/esp/esp-idf/components/esp_system /Users/akshajraut/esp/esp-idf/components/esp_timer /Users/akshajraut/esp/esp-idf/components/esp_wifi /Users/akshajraut/esp/esp-idf/components/espcoredump /Users/akshajraut/esp/esp-idf/components/esptool_py /Users/akshajraut/esp/esp-idf/components/fatfs /Users/akshajraut/esp/esp-idf/components/freertos /Users/akshajraut/esp/esp-idf/components/hal /Users/akshajraut/esp/esp-idf/components/heap /Users/akshajraut/esp/esp-idf/components/http_parser /Users/akshajraut/esp/esp-idf/components/idf_test /Users/akshajraut/esp/esp-idf/components/ieee802154 /Users/akshajraut/esp/esp-idf/components/json /Users/akshajraut/esp/esp-idf/components/log /Users/akshajraut/esp/esp-idf/components/lwip /Users/akshajraut/esp/ble_spp_client/main /Users/akshajraut/esp/esp-idf/components/mbedtls /Users/akshajraut/esp/esp-idf/components/mqtt /Users/akshajraut/esp/esp-idf/components/newlib /Users/akshajraut/esp/esp-idf/components/nvs_flash /Users/akshajraut/esp/esp-idf/components/openthread /Users/akshajraut/esp/esp-idf/components/partition_table /Users/akshajraut/esp/esp-idf/components/perfmon /Users/akshajraut/esp/esp-idf/components/protobuf-c /Users/akshajraut/esp/esp-idf/components/protocomm /Users/akshajraut/esp/esp-idf/components/pthread /Users/akshajraut/esp/esp-idf/components/sdmmc /Users/akshajraut/esp/esp-idf/components/soc /Users/akshajraut/esp/esp-idf/components/spi_flash /Users/akshajraut/esp/esp-idf/components/spiffs /Users/akshajraut/esp/esp-idf/components/tcp_transport /Users/akshajraut/esp/esp-idf/components/tinyusb /Users/akshajraut/esp/esp-idf/components/ulp /Users/akshajraut/esp/esp-idf/components/unity /Users/akshajraut/esp/esp-idf/components/usb /Users/akshajraut/esp/esp-idf/components/vfs /Users/akshajraut/esp/esp-idf/components/wear_levelling /Users/akshajraut/esp/esp-idf/components/wifi_provisioning /Users/akshajraut/esp/esp-idf/components/wpa_supplicant /Users/akshajraut/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/akshajraut/esp/ble_spp_client/build
+[1/8] Generating ld/sections.ld
+[2/8] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /Users/akshajraut/esp/ble_spp_client/sdkconfig
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: v5.1-dev-837-gf25af53077
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /Users/akshajraut/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /Users/akshajraut/esp/esp-idf/components/bootloader /Users/akshajraut/esp/esp-idf/components/bootloader_support /Users/akshajraut/esp/esp-idf/components/efuse /Users/akshajraut/esp/esp-idf/components/esp_app_format /Users/akshajraut/esp/esp-idf/components/esp_common /Users/akshajraut/esp/esp-idf/components/esp_hw_support /Users/akshajraut/esp/esp-idf/components/esp_rom /Users/akshajraut/esp/esp-idf/components/esp_system /Users/akshajraut/esp/esp-idf/components/esptool_py /Users/akshajraut/esp/esp-idf/components/freertos /Users/akshajraut/esp/esp-idf/components/hal /Users/akshajraut/esp/esp-idf/components/log /Users/akshajraut/esp/esp-idf/components/bootloader/subproject/main /Users/akshajraut/esp/esp-idf/components/bootloader/subproject/components/micro-ecc /Users/akshajraut/esp/esp-idf/components/newlib /Users/akshajraut/esp/esp-idf/components/partition_table /Users/akshajraut/esp/esp-idf/components/soc /Users/akshajraut/esp/esp-idf/components/spi_flash /Users/akshajraut/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/akshajraut/esp/ble_spp_client/build/bootloader
+[1/1] cd /Users/akshajraut/esp/ble_spp_client/build/bootloader/esp-idf/esptool_py && /Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/akshajraut/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/akshajraut/esp/ble_spp_client/build/bootloader/bootloader.bin
+Bootloader binary size 0x66c0 bytes. 0x940 bytes (8%) free.
+[3/6] Linking CXX executable spp_client_demo.elf
+[4/6] Generating binary image from built executable
+esptool.py v4.3
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /Users/akshajraut/esp/ble_spp_client/build/spp_client_demo.bin
+[5/6] cd /Users/akshajraut/esp/ble_spp_client/build/esp-idf/esptool_py && /Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/akshajraut/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/akshajraut/esp/ble_spp_client/build/partition_table/partition-table.bin /Users/akshajraut/esp/ble_spp_client/build/spp_client_demo.bin
+spp_client_demo.bin binary size 0x97c40 bytes. Smallest app partition is 0x100000 bytes. 0x683c0 bytes (41%) free.
+[5/6] cd /Users/akshajraut/esp/esp-idf/components/esptool_py && /Users/akshajraut/.espressif/tools/cmake/3.24.0/CMake.app/Contents/bin/cmake -D IDF_PATH=/Users/akshajraut/esp/esp-idf -D "SERIAL_TOOL=/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/Users/akshajraut/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/akshajraut/esp/ble_spp_client/build -P /Users/akshajraut/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32 -p /dev/cu.usbserial-0001 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 spp_client_demo.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.3
+Serial port /dev/cu.usbserial-0001
+
+A fatal error occurred: Could not open /dev/cu.usbserial-0001, the port doesn't exist
+FAILED: CMakeFiles/flash /Users/akshajraut/esp/ble_spp_client/build/CMakeFiles/flash 
+cd /Users/akshajraut/esp/esp-idf/components/esptool_py && /Users/akshajraut/.espressif/tools/cmake/3.24.0/CMake.app/Contents/bin/cmake -D IDF_PATH=/Users/akshajraut/esp/esp-idf -D "SERIAL_TOOL=/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/Users/akshajraut/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/akshajraut/esp/ble_spp_client/build -P /Users/akshajraut/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

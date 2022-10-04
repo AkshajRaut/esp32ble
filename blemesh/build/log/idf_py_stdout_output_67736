@@ -1,0 +1,62 @@
+[1/5] cd /Users/akshajraut/esp/blemesh/build/esp-idf/esptool_py && /Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/akshajraut/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/akshajraut/esp/blemesh/build/partition_table/partition-table.bin /Users/akshajraut/esp/blemesh/build/blemesh.bin
+blemesh.bin binary size 0x98f70 bytes. Smallest app partition is 0x100000 bytes. 0x67090 bytes (40%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/akshajraut/esp/blemesh/build/bootloader/esp-idf/esptool_py && /Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/akshajraut/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/akshajraut/esp/blemesh/build/bootloader/bootloader.bin
+Bootloader binary size 0x66c0 bytes. 0x940 bytes (8%) free.
+[2/3] cd /Users/akshajraut/esp/esp-idf/components/esptool_py && /Users/akshajraut/.espressif/tools/cmake/3.24.0/CMake.app/Contents/bin/cmake -D IDF_PATH=/Users/akshajraut/esp/esp-idf -D "SERIAL_TOOL=/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/Users/akshajraut/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/akshajraut/esp/blemesh/build -P /Users/akshajraut/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32 -p /dev/cu.usbserial-0001 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 blemesh.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.3
+Serial port /dev/cu.usbserial-0001
+Connecting.........
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+WARNING: Detected crystal freq 41.01MHz is quite different to normalized freq 40MHz. Unsupported crystal in use?
+Crystal is 40MHz
+MAC: 58:bf:25:36:53:54
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000a8fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26304 bytes to 16369...
+Writing at 0x00001000... (100 %)
+Wrote 26304 bytes (16369 compressed) at 0x00001000 in 0.9 seconds (effective 223.4 kbit/s)...
+Hash of data verified.
+Compressed 626544 bytes to 383022...
+Writing at 0x00010000... (4 %)
+Writing at 0x0001c51c... (8 %)
+Writing at 0x00024482... (12 %)
+Writing at 0x000298a2... (16 %)
+Writing at 0x00033506... (20 %)
+Writing at 0x00039123... (25 %)
+Writing at 0x0003f1cd... (29 %)
+Writing at 0x00044d64... (33 %)
+Writing at 0x0004a69a... (37 %)
+Writing at 0x00050108... (41 %)
+Writing at 0x00055801... (45 %)
+Writing at 0x0005b6c7... (50 %)
+Writing at 0x00061b10... (54 %)
+Writing at 0x00067a40... (58 %)
+Writing at 0x0006d320... (62 %)
+Writing at 0x00073716... (66 %)
+Writing at 0x0007909c... (70 %)
+Writing at 0x0007e92a... (75 %)
+Writing at 0x00087553... (79 %)
+Writing at 0x0008f823... (83 %)
+Writing at 0x00095922... (87 %)
+Writing at 0x0009af40... (91 %)
+Writing at 0x000a0c74... (95 %)
+Writing at 0x000a69de... (100 %)
+Wrote 626544 bytes (383022 compressed) at 0x00010000 in 10.0 seconds (effective 501.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 192.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

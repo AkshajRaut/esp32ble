@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/Users/akshajraut/esp/esp-idf/components/esptool_py/esptool/esptool.py", line 22, in <module>
+    esptool._main()  # type: ignore
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 1022, in _main
+    main()
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 664, in main
+    esp = esp or get_default_connected_device(
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 912, in get_default_connected_device
+    _esp = chip_class(each_port, initial_baud, trace)
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 273, in __init__
+    self._port = serial.serial_for_url(port)
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/serial/serialposix.py", line 332, in open
+    self._reconfigure_port(force_update=True)
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/serial/serialposix.py", line 517, in _reconfigure_port
+    termios.tcsetattr(
+termios.error: (22, 'Invalid argument')
+CMake Error at run_serial_tool.cmake:55 (message):
+  
+  /Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/Users/akshajraut/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32
+  failed
+
+

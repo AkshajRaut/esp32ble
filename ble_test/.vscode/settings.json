@@ -1,0 +1,19 @@
+{
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "idf.adapterTargetName": "esp32",
+    "idf.customExtraPaths": "/Users/akshajraut/.espressif/tools/xtensa-esp-elf-gdb/11.2_20220823/xtensa-esp-elf-gdb/bin:/Users/akshajraut/.espressif/tools/riscv32-esp-elf-gdb/11.2_20220823/riscv32-esp-elf-gdb/bin:/Users/akshajraut/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin:/Users/akshajraut/.espressif/tools/xtensa-esp32s2-elf/esp-2022r1-11.2.0/xtensa-esp32s2-elf/bin:/Users/akshajraut/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin:/Users/akshajraut/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin:/Users/akshajraut/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/Users/akshajraut/.espressif/tools/cmake/3.24.0/CMake.app/Contents/bin:/Users/akshajraut/.espressif/tools/openocd-esp32/v0.11.0-esp32-20220706/openocd-esp32/bin:/Users/akshajraut/.espressif/tools/ninja/1.10.2",
+    "idf.customExtraVars": "{\"OPENOCD_SCRIPTS\":\"/Users/akshajraut/.espressif/tools/openocd-esp32/v0.11.0-esp32-20220706/openocd-esp32/share/openocd/scripts\"}",
+    "idf.espIdfPath": "/Users/akshajraut/esp/esp-idf",
+    "idf.openOcdConfigs": [
+        "board/esp32-bridge.cfg"
+    ],
+    "idf.port": "/dev/cu.usbserial-0001",
+    "idf.pythonBinPath": "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python",
+    "idf.toolsPath": "/Users/akshajraut/.espressif",
+    "cmake.configureOnOpen": true,
+    "files.associations": {
+        "esp_gatt_common_api.h": "c",
+        "nvs_flash.h": "c",
+        "esp_ble_mesh_networking_api.h": "c"
+    }
+}

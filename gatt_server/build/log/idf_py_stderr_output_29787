@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/Users/akshajraut/esp/esp-idf/components/esptool_py/esptool/esptool.py", line 22, in <module>
+    esptool._main()  # type: ignore
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 1022, in _main
+    main()
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 808, in main
+    esp.flash_set_parameters(flash_size_bytes(args.flash_size))
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 1142, in flash_set_parameters
+    self.check_command(
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 407, in check_command
+    val, data = self.command(op, data, chk, timeout=timeout)
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 352, in command
+    self._port.timeout = new_timeout
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/serial/serialutil.py", line 372, in timeout
+    self._reconfigure_port()
+  File "/Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/serial/serialposix.py", line 517, in _reconfigure_port
+    termios.tcsetattr(
+termios.error: (22, 'Invalid argument')
+CMake Error at run_serial_tool.cmake:55 (message):
+  
+  /Users/akshajraut/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/Users/akshajraut/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32
+  failed
+
+

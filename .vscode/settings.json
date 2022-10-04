@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "ble_mesh_example_init.h": "c",
+        "esp_ble_mesh_defs.h": "c",
+        "esp_ble_mesh_networking_api.h": "c",
+        "esp_ble_mesh_provisioning_api.h": "c",
+        "esp_ble_mesh_config_model_api.h": "c",
+        "esp_ble_mesh_local_data_operation_api.h": "c",
+        "board.h": "c",
+        "esp_ble_mesh_common_api.h": "c",
+        "esp_ble_mesh_generic_model_api.h": "c",
+        "nvs_flash.h": "c",
+        "esp_log.h": "c"
+    },
+    "idf.port": "/dev/cu.usbserial-0001"
+}
